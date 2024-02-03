@@ -2,7 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './Home.css';
-
+import recommender_icon from '../../images/recommender_icon.jpeg';
+import blog_icon from '../../images/blog_icon.jpeg';
+import recipes_icon from '../../images/recipe_icon.jpeg';
+import articles_icon from '../../images/articles_icon.jpeg';
 
 const Home = () => {
   return (
@@ -120,29 +123,29 @@ const Home = () => {
           </div>
           {/* Featured Links Did You Know */}
           <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            <Link to="/DidYouKnowTV" className="px-10 py-20 text-center transition duration-300 transform bg-red-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
-              <img src="images/did_you_know_icons.png" alt="Did You Know Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
+            <Link to="/DidYouKnowTV" className="px-10 py-20 text-center transition duration-300 transform bg-blue-300 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+              <img src={recommender_icon} alt="Recommender" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
               <p className="font-semibold text-gray-200">
                 Recommender
               </p>
             </Link>
             {/* Featured Link Fun Facts */}
-            <Link to="/FunFacts" className="px-10 py-20 text-center transition duration-300 transform bg-green-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
-            <img src="images/fun_facts_icons.png" alt="Fun Facts Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
+            <Link to="/FunFacts" className="px-10 py-20 text-center transition duration-300 transform bg-fuchsia-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <img src={blog_icon} alt="Fun Facts Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
               <p className="font-semibold text-gray-200">
                 Blog
               </p>
             </Link>
             {/* Featured Link Righteous Reading */}
-            <Link to="/RighteousReading" className="px-10 py-20 text-center transition duration-300 transform bg-yellow-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
-            <img src="images/righteous_reading_icon.png" alt="Righteous Reading Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
+            <Link to="/RighteousReading" className="px-10 py-20 text-center transition duration-300 transform bg-amber-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <img src={recipes_icon} alt="Righteous Reading Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
               <p className="font-semibold text-gray-200">
                 Recipes
               </p>
             </Link>
             {/* Featured Link Weekly Quiz */}
-            <Link to="/GetQuiz" className="px-10 py-20 text-center transition duration-300 transform bg-blue-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
-            <img src="images/weekly_quiz_icon.png" alt="Weekly Quiz Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
+            <Link to="/GetQuiz" className="px-10 py-20 text-center transition duration-300 transform bg-purple-300 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <img src={articles_icon} alt="Weekly Quiz Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
               <p className="font-semibold text-gray-200">
                 Articles
               </p>

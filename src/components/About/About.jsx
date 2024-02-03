@@ -2,11 +2,11 @@ import React from 'react';
 import './About.css';
 import image1 from './../../images/ed-3.png';
 import image2 from './../../images/ed-6.png';
-import image3 from './../../images/screenshot2.png';
-import icon1 from './../../images/team_pic_claire.png';
-import icon2 from './../../images/team_pic_simon.png';
-import icon3 from './../../images/team_pic_jem.png';
-import icon4 from './../../images/team_pic_annam.png';
+// import image3 from './../../images/screenshot2.png';
+import icon1 from '../../images/dev1.png';
+import icon2 from '../../images/dev2.png';
+import icon3 from '../../images/dev3.png';
+import icon4 from '../../images/dev4.png';
 
 
 const About = () => {
@@ -25,7 +25,7 @@ const About = () => {
               Welcome to the Ubuntu Unity! 
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
-            Our mission is to provide engaging and educational content related to Black History. Explore interesting facts, take weekly quizzes, and discover recommended books on Amazon.
+            Our mission is to provide engaging and educational content related to Black History. Explore interesting facts, recommended blogs, recipes, articles and share what you have learnt.
             </p>
           </div>
           <div className="flex flex-col items-center md:flex-row">
@@ -42,7 +42,7 @@ const About = () => {
       </div>
     </div>
 
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    {/* <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-xl mb-5 md:mx-auto sm:text-center lg:max-w-2xl">
         <div className="mb-4">
           <a
@@ -74,7 +74,7 @@ const About = () => {
       </div>
       <div className="sm:text-center">
       </div>
-    </div>
+    </div> */}
 
 
     <div className=" mt-3 relative">
@@ -161,7 +161,7 @@ const About = () => {
     </div>
    
 
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style={{color: 'white'}}>
     <h2 className="max-w-lg mx-auto mb-6 font-sans text-3xl font-extrabold tracking-tight text-[#262626] sm:text-4xl sm:leading-none text-center">
         Meet Our Development Team...
     </h2>
@@ -173,8 +173,8 @@ const About = () => {
       alt="Person"
     />
     <div className="flex flex-col items-center mt-2">
-    <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/ClaireFraser121" target="_blank" rel="noopener noreferrer ">Claire Fraser</a>
-      <p className="mb-4 text-xs font-sans font-bold text-gray-800">Front-end Web Developer</p>
+    <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/RashmiD25" target="_blank" rel="noopener noreferrer ">Rashmi Datta</a>
+      <p className="mb-4 text-xs font-sans font-bold text-gray-800">Grad student @ NC State</p>
       
     </div>
   </div>
@@ -185,8 +185,8 @@ const About = () => {
       alt="Person"
     />
     <div className="flex flex-col items-center mt-2">
-    <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/SimonAMcKenzie" target="_blank" rel="noopener noreferrer">Simon McKenzie</a>
-    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Front-end Web Developer</p>
+    <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/smarabattula" target="_blank" rel="noopener noreferrer">Sasank Marabattula</a>
+    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Grad student @ NC State</p>
     </div>
   </div>
   <div>
@@ -196,8 +196,8 @@ const About = () => {
       alt="Person"
     />
     <div className="flex flex-col items-center mt-2">
-    <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/partialarts" target="_blank" rel="noopener noreferrer">Jem Lawton</a>
-    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Front-end Web Developer</p>
+    <a  className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/Hp-Harshitha-hp" target="_blank" rel="noopener noreferrer">Harshitha Paruchuri</a>
+    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Grad student @ NC State</p>
     </div>
   </div>
   <div>
@@ -207,8 +207,8 @@ const About = () => {
       alt="Person"
     />
     <div className="flex flex-col items-center mt-2">
-    <a className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/AnnamKhalid" target="_blank" rel="noopener noreferrer">Annam Khalid</a>
-    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Front-end Web Developer</p>
+    <a className='hover:text-[#e76d71] text-lg font-bold font-sans' href="https://github.com/divitkalathil" target="_blank" rel="noopener noreferrer">Divit Kalathil</a>
+    <p className="mb-4 text-xs font-sans font-bold text-gray-800">Grad student @ NC State</p>
       
     </div>
   </div>
