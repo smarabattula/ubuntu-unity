@@ -1,0 +1,43 @@
+/* randomFactCarousel.css */
+/* Style for the fact card */
+.fact-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease-in-out; /* Add a fade-in effect */
+}
+
+/* Style for the fact card heading (h3) */
+.fact-card h3 {
+  font-size: 1.8rem;
+  color: text-gray-800; /* Use Tailwind text color classes */
+  margin-bottom: 10px;
+}
+
+/* Style for the fact card tags (p) */
+.fact-card p {
+  font-size: 1rem;
+  color: text-gray-600; /* Use Tailwind text color classes */
+  margin-bottom: 10px;
+}
+
+/* Style for the fact card content (p) */
+.fact-card p.content {
+  font-size: 1.2rem;
+  color: text-gray-700; /* Use Tailwind text color classes */
+  margin-bottom: 20px;
+}
+
+/* Style for the "Learn More" link */
+.fact-card a {
+  color: text-blue-500; /* Use Tailwind text color classes */
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+

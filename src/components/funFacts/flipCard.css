@@ -1,0 +1,166 @@
+/* flipCards.css */
+
+/* Common styles for grid and card */
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100%;
+  padding-bottom: 108rem;
+}
+
+.card-container {
+  /* width: 100%; */
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 400px;
+  perspective: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center; /* Center horizontally */
+}
+
+.card-container-item {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 265px;
+  height: 400px;
+  perspective: 1000px;
+  position: relative;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
+}
+
+/* Front and back face styling */
+.front {
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  color: rgb(227, 109, 109);
+  font-weight: bolder;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 5px solid rgba(214, 223, 223, 0.996);
+}
+
+.front, .back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.back {
+  transform: rotateY(180deg);
+  backface-visibility: visible;
+  background-color: rgb(244, 245, 250);
+  padding: 20px;
+  box-sizing: border-box;
+  border: 5px solid rgba(220, 233, 233, 0.604);
+}
+
+/* Additional styling for back face paragraph */
+.back p {
+  color: rgb(227, 109, 109);
+  font-size: 14px;
+  max-height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+  backface-visibility: visible;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-container {
+  object-fit: cover; /* or contain, based on your preference */
+  width: 100%;
+  height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .card-container {
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .grid-container {
+    padding-bottom: 10vh; /* Adjust as needed */
+  }
+}
+
+@media (max-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr)); /* Adjust minmax values as needed */
+    gap: 10px;
+    justify-content: center; 
+  }
+
+  .grid-container {
+    padding-bottom: 10vh; /* Adjust as needed */
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust as needed */
+    height: auto; /* Remove fixed height for flexibility */
+  }
+
+  .grid-container {
+    padding-bottom: 5vh; /* Adjust as needed */
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    max-height: auto; /* Adjust as needed */
+  }
+
+  .image-container {
+    width: 100%;
+    height: auto; /* Adjust as needed */
+  }
+}
+

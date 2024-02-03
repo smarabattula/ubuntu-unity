@@ -1,0 +1,50 @@
+/* CSS styles for custom radio buttons   */
+.radioCustomButton {
+    position: absolute;
+    width: auto;
+    opacity: 0;
+}
+
+.radioCustomLabel {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem 2.5rem 1.5rem 5rem;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.radioCustomButton~.radioCustomLabel:before {
+    position: absolute;
+    top: 20px;
+    left: 38px;
+    width: 28px;
+    height: 28px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.radioCustomButton:checked~.radioCustomLabel:before {
+    content: '';
+    background: #8bc53f url(./svg/icon-check.svg) no-repeat;
+    background-size: 27px;
+    border-color: #8bc53f;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 769px) {
+    .restartQuizBtn {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .heroSection {
+        padding-bottom: 0px;
+    }
+}
