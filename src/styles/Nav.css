@@ -1,0 +1,23 @@
+/* Nav.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Your custom styles go here */
+/* .nav-container {
+  @apply flex items-center justify-between flex-wrap bg-[#262626] p-6;
+}
+
+.nav-toggle-button {
+  @apply flex items-center px-3 py-2 border rounded text-[#FFFFFF] border-[#FFFFFF] hover:text-[#E97451] hover:border-[#E97451];
+}
+
+.nav-links {
+  @apply hidden lg:flex lg:items-center lg:w-auto;
+}
+
+.nav-link {
+  @apply whitespace-nowrap block mt-4 lg:inline-block lg:mt-0 text-[#FFFFFF] hover:text-[#E97451] mx-2;
+} */
+
+/* Add more styles as needed */
