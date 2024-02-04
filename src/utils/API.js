@@ -4,7 +4,7 @@ export default {
   getQuizQuestions: function () {
 
     return new Promise((resolve, reject) => {
-      Papa.parse('https://docs.google.com/spreadsheets/d/e/2PACX-1vQIuvyzMCv-41hAAhDwH79Gv9G0D6iJ9Fdt1e7pV2-QLZQwwOR9tLgTcLHXz6K8eRakhIiWdtANwgvJ/pub?output=csv', {
+      Papa.parse('https://docs.google.com/spreadsheets/d/e/2PACX-1vS8y7TVxHMPBuAVo_HZVax8yoz5GgbbWZQkTWmk2DJ9VIOMGgDbqn8ek2dSfbSHeIAHyIQi0ixhz8_H/pub?output=csv', {
         download: true,
         header: true,
         complete: function (results) {
