@@ -1,37 +1,34 @@
-// App.jsx
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import GlobalLayout from './components/common/GlobalLayout';
-import Home from './components/home/Home';
-import About from './components/About/About';
-import FunFacts from './components/funFacts/FunFacts';
-import DidYouKnowTV from './components/didYouKnowTV/DidYouKnowTV';
-import RighteousReading from './components/righteousReading/RighteousReading';
-import Nav from './components/common/Nav';
-import './index.css';
-import './styles/tailwind.css';
-import './styles/Nav.css';
-import Footer from './components/common/Footer';
-import GetQuiz from './components/weeklyQuiz/GetQuiz';
+// // App.jsx
+// import LandingPage from "./LandingPage.jsx";
+// import { LoginForm } from "./components/LoginForm.jsx";
 
-const App = () => {
+// const App = () => {
+//   return (
+//     <LoginForm/>
+//   );
+// }
+
+// export default App;
+
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SignupPage from './components/pages/Signup';
+import LoginPage from './components/pages/Login';
+
+function App() {
   return (
-    <Router >
-      <GlobalLayout>
-          <Nav />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/home" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/funFacts" element={<FunFacts />} />
-              <Route path="/getQuiz" element={<GetQuiz />} />
-              <Route path="/didYouKnowTV" element={<DidYouKnowTV />} />
-              <Route path="/righteousReading" element={<RighteousReading />} />
-            </Routes>
-          <Footer />
-       
-      </GlobalLayout>
-    </Router>
+    <div className="min-h-full h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md w-full space-y-8">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LoginPage />} />
+            <Route path="/signup" element={<SignupPage />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </div>
   );
 }
 
 export default App;
+
