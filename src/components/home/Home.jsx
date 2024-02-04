@@ -137,10 +137,10 @@ const Home = () => {
               </p>
             </Link>
             {/* Featured Link Righteous Reading */}
-            <Link to="/RighteousReading" className="px-10 py-20 text-center transition duration-300 transform bg-amber-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
-            <img src={recipes_icon} alt="Righteous Reading Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
+            <Link to="/Recipes" className="px-10 py-20 text-center transition duration-300 transform bg-amber-400 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+            <img src={recipes_icon} alt="Recipes Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
               <p className="font-semibold text-gray-200">
-                Righteous Reading
+                Recipes
               </p>
             </Link>
             {/* Featured Link Weekly Quiz */}
