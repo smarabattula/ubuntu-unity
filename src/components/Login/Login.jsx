@@ -31,8 +31,9 @@ export default function Login(){
             email: 'user@example.com',
             password: 'password'
         };
+
        if (loginState['email-address'] === sampleUser['email'] && loginState.password === sampleUser.password) {
-            navigate('/landing'); // Redirect to the landing page
+            navigate('/home'); // Redirect to the landing page
         } else {
             setError('Username or password is incorrect'); // Set error message
         }
