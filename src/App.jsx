@@ -4,25 +4,33 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+
+import './index.css';
+import './styles/tailwind.css';
+import './styles/Nav.css';
+
 import SignupPage from './components/pages/Signup';
 import LoginPage from './components/pages/Login';
 import GlobalLayout from './components/common/GlobalLayout';
 import Nav from './components/common/Nav';
 
+import Recommender from './components/recommender/Recommender';
 import Home from './components/home/Home';
 import About from './components/About/About';
 import FunFacts from './components/funFacts/FunFacts';
 import DidYouKnowTV from './components/didYouKnowTV/DidYouKnowTV';
 import RighteousReading from './components/righteousReading/RighteousReading';
 import Recipes from './components/recipe/Recipes';
-import './index.css';
-import './styles/tailwind.css';
-import './styles/Nav.css';
 import Footer from './components/common/Footer';
 import GetQuiz from './components/weeklyQuiz/GetQuiz';
 import recipes from './components/recipe/data';
 import RecipeDetails from './components/recipe/RecipeDetails';
 import RecipesPage from './components/recipe/RecipesPage';
+
+import MovieRecomm from './components/recommender/MovieRecomm';
+import ArticleRecomm from './components/recommender/ArticleRecomm';
+import BookRecomm from './components/recommender/BookRecomm';
+
 // import Recipes from './components/recipe/Recipes';
 // import recipes from './components/recipe/data';
 // import RecipeDetails from './components/recipe/RecipeDetails';
@@ -31,8 +39,6 @@ import RecipesPage from './components/recipe/RecipesPage';
 
 function App() {
   return (
-    <div>
-    <div>
      <BrowserRouter>
      <GlobalLayout>
      <Nav />
@@ -53,12 +59,14 @@ function App() {
                   })
                 }
               </Route>
+            <Route path="/ArticleRecomm" element={<ArticleRecomm />} />
+            <Route path="/MovieRecomm" element={<MovieRecomm />} />
+            <Route path="/BookRecomm" element={<BookRecomm />} />
+            <Route path='/Recommender' element={<Recommender/>}/>
         </Routes>
         <Footer />
         </GlobalLayout>
       </BrowserRouter>
-    </div>
-  </div>
   );
 }
 

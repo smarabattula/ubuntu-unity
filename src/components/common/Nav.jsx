@@ -10,7 +10,7 @@ const Nav = () => {
     <nav className="flex items-center justify-between flex-wrap bg-[#50C878] p-2">
       <div className="flex flex-1 items-center justify-start">
         <div className="block lg:hidden">
-          <button 
+          <button
             onClick={() => setIsOpen(!isOpen)}
             className="flex items-center px-3 py-2 border rounded text-[#262626] border-[#262626] hover:text-[#E97451] hover:border-[#E97451]"
           >
@@ -29,8 +29,8 @@ const Nav = () => {
           <Link to="/About" className="whitespace-nowrap font-bold font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#E97451]  mx-2">
             About Us
           </Link>
-          <Link to="/DidYouKnowTV" className="whitespace-nowrap font-bold font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#E97451]  mx-2">
-            Recommender
+          <Link to="/Recommender" className="whitespace-nowrap font-bold font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#E97451]  mx-2">
+            Recommender GPT
           </Link>
           <Link to="/FunFacts" className="whitespace-nowrap font-bold font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#E97451] mx-2">
             Blog
@@ -44,7 +44,7 @@ const Nav = () => {
           <Link to="/Recipes" className="whitespace-nowrap font-bold font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#E97451] mx-2">
             Recipes
           </Link>
-          
+
         </div>
       </div>
 
