@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center mb-4">
+      {/* <div className="flex justify-center items-center mb-4">
         <a href="https://youtube.com/@2baddaDidYouKnow" target="_blank" rel="noopener noreferrer">
           <img src={youtubeIcon} alt="YouTube" className="h-8 w-8 rounded-full mx-1" />
         </a>
@@ -33,7 +33,7 @@ const Footer = () => {
         <a href="https://github.com/ClaireFraser121/tbt-education-app" target="_blank" rel="noopener noreferrer">
           <img src={githubIcon} alt="GitHub" className="h-8 w-8 rounded-full mx-1" />
         </a>
-      </div>
+      </div> */}
 
       <p className="text-sm text-center font-bold font-sans text-[#262626]">&copy; 2024 Ubuntu Unity App</p>
     </footer>
