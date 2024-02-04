@@ -14,6 +14,7 @@ import LoginPage from './components/pages/Login';
 import GlobalLayout from './components/common/GlobalLayout';
 import Nav from './components/common/Nav';
 
+import Recommender from './components/recommender/Recommender';
 import Home from './components/home/Home';
 import About from './components/About/About';
 import FunFacts from './components/funFacts/FunFacts';
@@ -26,9 +27,9 @@ import recipes from './components/recipe/data';
 import RecipeDetails from './components/recipe/RecipeDetails';
 import RecipesPage from './components/recipe/RecipesPage';
 
-import MovieRecomm from './components/pages/MovieRecomm';
-import ArticleRecomm from './components/pages/ArticleRecomm';
-import BookRecomm from './components/pages/BookRecomm';
+import MovieRecomm from './components/recommender/MovieRecomm';
+import ArticleRecomm from './components/recommender/ArticleRecomm';
+import BookRecomm from './components/recommender/BookRecomm';
 
 // import Recipes from './components/recipe/Recipes';
 // import recipes from './components/recipe/data';
@@ -61,7 +62,7 @@ function App() {
             <Route path="/ArticleRecomm" element={<ArticleRecomm />} />
             <Route path="/MovieRecomm" element={<MovieRecomm />} />
             <Route path="/BookRecomm" element={<BookRecomm />} />
-
+            <Route path='/Recommender' element={<Recommender/>}/>
         </Routes>
         <Footer />
         </GlobalLayout>
