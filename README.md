@@ -1,15 +1,15 @@
 # ubuntu-unity
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![OpenAI](https://a11ybadges.com/badge?logo=openai) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10615620.svg)](https://doi.org/10.5281/zenodo.10615620)
 
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
 ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ---
-# About
 
 # Ubuntu Unity - Celebrating Black History and Pride
 ## Overview
-Welcome to Ubuntu Unity, a project dedicated to promoting and celebrating the rich traditional values and way of life of the Black community. Our goal is to highlight the essence of Ubuntu and foster unity within the community.
+Welcome to Ubuntu Unity, a project dedicated to promoting and celebrating the rich traditional values and way of life of the Black community. Our goal is to highlight the essence of Ubuntu and foster unity within the community. A project, which is done as part of Hack NC State x MLH preserving black culture 
 
 # Project Structure
 ## Components
