@@ -35,7 +35,7 @@ const ArticleRecomm = () => {
                     value={question}
                     onChange={handleChange}
                 />
-                <button type="submit">Submit</button>
+                <button type="submit" color = "green">Submit</button>
             </form>
             {error && (
                 <div className="error">

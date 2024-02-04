@@ -1,44 +1,64 @@
 /* HomePage.css */
 
 .homepage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.button {
+  width: 90%;
+  max-width: 300px; /* Set a max-width for larger screens */
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem; /* Adjust font size */
+  font-weight: bold;
+  padding: 0 10px; /* Add padding */
+}
+
+/* Specific background colors for each category */
+.movie { background-color: #28a745; }
+.african { background-color: #dc3545; }
+.book { background-color: #ffc107; }
+.articles { background-color: #17a2b8; }
+
+/* Responsive design for larger screens */
+@media (min-width: 768px) {
+  .homepage {
+      flex-direction: row; /* Row direction for larger screens */
   }
-  
+
   .button {
-    width: 300px;
-    height: 100px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background-color: #007bff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      width: auto; /* Auto width for buttons */
+      margin: 0 10px; /* Adjust margins */
   }
-  
-  .button a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  .movie {
-    background-color: #28a745;
-  }
-  
-  .african {
-    background-color: #dc3545;
-  }
-  
-  .book {
-    background-color: #ffc107;
-  }
-  
-  .articles {
-    background-color: #17a2b8;
-  }
-  
+}
+
+.button:hover {
+  transform: scale(1.05); /* Slightly increase the size */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.button a:hover {
+  color: #f8f9fa; /* Optionally change the text color on hover */
+}
+
+.search
+{
+
+}
