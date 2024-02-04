@@ -25,7 +25,7 @@ const About = () => {
               Welcome to the Ubuntu Unity! 
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
-            Our mission is to provide engaging and educational content related to Black History. Explore interesting facts, recommended blogs, recipes, articles and share what you have learnt.
+            Our mission is to provide engaging and educational content related to Black History. Explore interesting facts, recommended blogs, recipes, quizzes and share what you have learnt.
             </p>
           </div>
           <div className="flex flex-col items-center md:flex-row">

@@ -5,7 +5,7 @@ import './Home.css';
 import recommender_icon from '../../images/recommender_icon.jpeg';
 import blog_icon from '../../images/blog_icon.jpeg';
 import recipes_icon from '../../images/recipe_icon.jpeg';
-import articles_icon from '../../images/articles_icon.jpeg';
+import quiz_icon from '../../images/quiz_icon.jpeg';
 
 const Home = () => {
   return (
@@ -145,9 +145,9 @@ const Home = () => {
             </Link>
             {/* Featured Link Weekly Quiz */}
             <Link to="/GetQuiz" className="px-10 py-20 text-center transition duration-300 transform bg-purple-300 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
-            <img src={articles_icon} alt="Weekly Quiz Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
+            <img src={quiz_icon} alt="Weekly Quiz Icon" className="mx-auto mb-4" style={{ maxWidth: '80%', maxHeight: '80%' }} />
               <p className="font-semibold text-gray-200">
-                Articles
+                Quiz
               </p>
             </Link>
           </div>

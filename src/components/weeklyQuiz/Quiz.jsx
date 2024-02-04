@@ -86,14 +86,14 @@ const Quiz = ({ quizQuestions, getQuizAgain }) => {
         <div>
             {/* Start screen content */}
             {!showEndScreen && showStartScreen && (
-                <div className="start-screen bg-gradient-to-r from-green-900 via-green-700 to-green-500 text-white p-8 mx-auto w-full">
+                <div className="start-screen bg-gradient-to-r from-purple-900 via-purple-700 to-purple-500 text-white p-8 mx-auto w-full">
                     <h2 className="mt-12 mb-7 text-3xl font-bold mb-4 text-center">Weekly Quiz</h2>
                     <p className="text-center mb-10 mt-8">
                         Test your knowledge by trying to answer the following questions. You'll be able to see your score at the end!
                     </p>
                     <button
 
-                        className="bg-yellow-400 mb-20 hover:bg-green-400 text-white font-bold py-2 px-4 rounded mx-auto block"
+                        className="bg-cyan-400 mb-20 hover:bg-purple-400 text-white font-bold py-2 px-4 rounded mx-auto block"
                         onClick={startQuiz}
                     >
                         Start Quiz
@@ -105,10 +105,10 @@ const Quiz = ({ quizQuestions, getQuizAgain }) => {
             {!showStartScreen && showQuizScreen && (
                 <>
                     {/* Quiz screen header */}
-                    <div className="heroSection bg-gradient-to-r from-green-800 via-green-600 to-green-400 text-white p-8 pb-10 mb-8 flex flex-col md:flex-row items-center">
+                    <div className="heroSection bg-gradient-to-r from-purple-800 via-purple-600 to-purple-400 text-white p-8 pb-10 mb-8 flex flex-col md:flex-row items-center">
                         <h2 className="text-3xl font-bold mx-auto">Weekly Quiz</h2>
                         <button
-                            className="restart-quiz-btn bg-yellow-400 mb-20 md:mb-0 hover:bg-green-400 text-white font-bold py-2 px-4 rounded"
+                            className="restart-quiz-btn bg-cyan-400 mb-20 md:mb-0 hover:bg-purple-400 text-white font-bold py-2 px-4 rounded"
                             onClick={reloadQuiz}
                         >
                             Restart Quiz
@@ -145,15 +145,15 @@ const Quiz = ({ quizQuestions, getQuizAgain }) => {
             )}
             {/* Render the end screen */}
             {!showQuizScreen && showEndScreen && (
-                <div className="end-screen bg-gradient-to-r from-green-900 via-green-700 to-green-500 text-white p-8 mx-auto w-full">
+                <div className="end-screen bg-gradient-to-r from-purple-900 via-purple-700 to-purple-500 text-white p-8 mx-auto w-full">
                     <h2 className="mt-5 mb-7 text-3xl font-bold mb-4 text-center">Quiz Completed</h2>
                     <p className="text-center mb-7 mt-8 text-xl">
                         Congratulations on completing the quiz!</p>
                     <p className="text-center mb-10 mt-2">Your final score is <span className="font-bold text-2xl">{finalScore}</span> out of <span className="font-bold text-2xl">{quizQuestions.length}</span>.</p>
 
 
-                    <div className="max-w-4xl mx-auto my-auto px-6 py-5 text-center transition duration-300 transform bg-gray-900 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
-                        <p className="font-semibold text-gray-200">
+                    <div className="max-w-4xl mx-auto my-auto px-6 py-5 text-center transition duration-300 transform bg-amber-900 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+                        <p className="font-semibold text-amber-200">
                             {incorrectQuestions.length > 0 && (
                                 <div className="text-center mb-10 mt-8">
                                     <h3 className="mt-7 mb-7 text-2xl font-bold mb-2 text-center">The questions you got wrong:</h3>
@@ -162,7 +162,7 @@ const Quiz = ({ quizQuestions, getQuizAgain }) => {
                                             <p className="mt-5 mb-1">
                                                 <strong>{index + 1}:</strong> {question.question}
                                             </p>
-                                            <p className="text-green-500 mb-7 font-light">
+                                            <p className="text-purple-500 mb-7 font-light">
                                                 Correct Answer: {question.correctAnswer}
                                             </p>
                                         </div>
@@ -177,7 +177,7 @@ const Quiz = ({ quizQuestions, getQuizAgain }) => {
 
                     </p>
                     <button
-                        className="restartQuizBtn bg-yellow-400 hover:bg-green-400 text-white font-bold mb-8 py-2 px-4 rounded mx-auto block"
+                        className="restartQuizBtn bg-cyan-400 hover:bg-purple-400 text-white font-bold mb-8 py-2 px-4 rounded mx-auto block"
                         onClick={reloadQuiz}
                     >
                         Restart Quiz
