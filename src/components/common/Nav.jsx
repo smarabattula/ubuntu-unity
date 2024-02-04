@@ -36,10 +36,13 @@ const Nav = () => {
             Blog
           </Link>
           <Link to="/RighteousReading" className="whitespace-nowrap font-bold font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#E97451] mx-2">
-            Recipes
+            Books
           </Link>
           <Link to="/GetQuiz" className="whitespace-nowrap font-bold font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#E97451] mx-2">
-            Quiz
+            Daily Quiz
+          </Link>
+          <Link to="/Recipes" className="whitespace-nowrap font-bold font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#E97451] mx-2">
+            Recipes
           </Link>
           
         </div>

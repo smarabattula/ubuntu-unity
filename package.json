@@ -6,6 +6,7 @@
   "main": "main.jsx",
   "scripts": {
     "dev": "vite",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start --public-url=/",
     "build": "vite build && npm run build:css",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
@@ -13,6 +14,8 @@
     "watch:css": "tailwindcss build -i src/styles/tailwind.css -o dist/output.css --watch"
   },
   "dependencies": {
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.7",
     "axios": "^1.6.5",
     "flowbite-react": "^0.7.2",
     "framer-motion": "^10.18.0",
@@ -21,7 +24,11 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.2",
     "react-scripts": "^5.0.1",
+<<<<<<< HEAD
+    "wouter": "^2.12.1"
+=======
     "tw-elements-react": "^1.0.0-alpha2"
+>>>>>>> origin/main
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
