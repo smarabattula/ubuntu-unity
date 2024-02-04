@@ -20,7 +20,6 @@ import FunFacts from './components/funFacts/FunFacts';
 import DidYouKnowTV from './components/didYouKnowTV/DidYouKnowTV';
 import RighteousReading from './components/righteousReading/RighteousReading';
 import Recipes from './components/recipe/Recipes';
-
 import Footer from './components/common/Footer';
 import GetQuiz from './components/weeklyQuiz/GetQuiz';
 import recipes from './components/recipe/data';
@@ -39,7 +38,6 @@ import BookRecomm from './components/pages/BookRecomm';
 
 function App() {
   return (
-
      <BrowserRouter>
      <GlobalLayout>
      <Nav />
