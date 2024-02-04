@@ -24,7 +24,11 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.2",
     "react-scripts": "^5.0.1",
+<<<<<<< HEAD
     "wouter": "^2.12.1"
+=======
+    "tw-elements-react": "^1.0.0-alpha2"
+>>>>>>> origin/main
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
