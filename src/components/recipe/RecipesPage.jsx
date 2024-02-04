@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const RecipesPage = ({ recipes }) => {
   return (
     <div>
-      <h1 style={{ textAlign: 'center' }}>Recipes</h1>
+      <h1 style={{ textAlign: 'center', fontSize: 20, textEmphasis: true }}>Recipes</h1>
       <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         {recipes.map((recipe, index) => (
           <Link index={index} to={`/recipes/${recipe.title.toLowerCase().replace(/\s+/g, '-')}`} style={{ textDecoration: 'none' }}>

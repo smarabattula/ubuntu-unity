@@ -1,45 +1,35 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-
-const OpenAI =require("openai");
-const e = require('express');
-
+const OpenAI = require("openai");
 
 const app = express();
 const PORT = process.env.PORT || 7005;
-const openai = new OpenAI({ apiKey: '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' });
+const openai = new OpenAI({ apiKey: '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' });
 
 app.use(cors({
     origin: '*',
     methods: 'GET,POST,PUT,DELETE',
     credentials: true
 }));
-console.log('   @1 ');
+
 app.use(bodyParser.json());
 
-// Set your OpenAI API key
-
-
-console.log('   @2 ');
 app.post('/api/question', async (req, res) => {
     const question = req.body.question;
+
+    let prompt = '';
+
     if (question.includes('book') || question.includes('books')) {
-        // If the question contains 'book', provide a prompt for book recommendations
-        prompt = `As a literature scholar in African culture, please recommend books related to the question: '${question}' in less than 3 sentences .`;
-    } else if (question.includes('movie') || (question.includes('documentary')|| question.includes('movies') || (question.includes('documentaries')))){
-
-        prompt = `The question is '${question}'. Please provide a movie recommendation deeply connected to African culture and history, including the movie name, a short description, and its genre in less than 2 sentences. If the question asked is not related to movie suggestions, please say 'Rephrase the question, please.@@1'`;
-    }else if (question.includes('articles') ||question.includes('article') ){
-
-        prompt = `The question is '${question}'. You are a african scholor and you read many african articles related to history and culture, Please recommend best articles acc the question asked in less than 3 sentences '`;
-    }
-    else{
-        prompt = `Rephrase the question, please @@1.`;
+        prompt = `Recommend 5 books related to : '${question}' with a brief description of each in less than 3 sentences.`;
+    } else if (question.includes('movie') || question.includes('movies') || question.includes('documentary') || question.includes('documentaries')) {
+        prompt = `Give 5 African movies related to '${question}' with a brief description of each in 2 sentences.`;
+    } else if (question.includes('articles') || question.includes('article')) {
+        prompt = `Give 5 articles related to '${question}' with a brief description of each in 1 sentence.`;
+    } else {
+        prompt = `Rephrase the question, please.`;
     }
 
-
-    console.log('   @3 ');
     try {
         const completion = await getCompletionWithRetry(prompt);
         res.json({ message: completion });
@@ -49,29 +39,16 @@ app.post('/api/question', async (req, res) => {
     }
 });
 
-// Function to get completion with retry
-async function getCompletionWithRetry(prompt, model = "gpt-3.5-turbo", max_retries = 3) {
+async function getCompletionWithRetry(prompt, max_retries = 3) {
     let retries = max_retries;
-    const messages = [{ "role": "user", "content": prompt }];
-    const inputs = [
-        { role: "system", content: "You only know african culture and history very deep and you give answers in 2 sentences only" },
-        { role: "user", content: messages[0].content },
-      ];
 
     while (retries > 0) {
         try {
-            console.log('   @4aaa ');
-
-            console.log('   @5aaa ',messages);
-            console.log('   @@5   ',messages[0].content);
             const response = await openai.chat.completions.create({
-                model: "gpt-4",
-                messages: [{ role: "system", content:  messages[0].content }],
-
+                model: "gpt-3.5-turbo",
+                messages: [{ role: "system", content: "You are an expert in African culture and history. Provide insightful responses in 2 sentences." }, { role: "user", content: prompt }],
             });
-            console.log('   @8 ');
-            console.log('   @9 ', response.choices[0].message["content"]);
-            console.log(' @10 ',response.choices[0]);
+
             return response.choices[0].message["content"];
         } catch (error) {
             if (error.response && error.response.status === 502) {

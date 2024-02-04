@@ -43,7 +43,7 @@ const BookRecomm = () => {
                 </div>
             )}
             {response && (
-                <div className="response">
+                <div className="response margin-top: 10px line-height: 1.5 color: #333">
                     <p>{response}</p>
                 </div>
             )}
