@@ -4,9 +4,13 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+
+import './index.css';
+import './styles/tailwind.css';
+import './styles/Nav.css';
+
 import SignupPage from './components/pages/Signup';
 import LoginPage from './components/pages/Login';
-import LandingPage from './LandingPage';
 import GlobalLayout from './components/common/GlobalLayout';
 import Nav from './components/common/Nav';
 
@@ -16,17 +20,17 @@ import FunFacts from './components/funFacts/FunFacts';
 import DidYouKnowTV from './components/didYouKnowTV/DidYouKnowTV';
 import RighteousReading from './components/righteousReading/RighteousReading';
 import Recipes from './components/recipe/Recipes';
-import Nav from './components/common/Nav';
-import './index.css';
-import './styles/tailwind.css';
-import './styles/Nav.css';
+
 import Footer from './components/common/Footer';
 import GetQuiz from './components/weeklyQuiz/GetQuiz';
 import recipes from './components/recipe/data';
 import RecipeDetails from './components/recipe/RecipeDetails';
 import RecipesPage from './components/recipe/RecipesPage';
-import Footer from './components/common/Footer';
-import GetQuiz from './components/weeklyQuiz/GetQuiz';
+
+import MovieRecomm from './components/pages/MovieRecomm';
+import ArticleRecomm from './components/pages/ArticleRecomm';
+import BookRecomm from './components/pages/BookRecomm';
+
 // import Recipes from './components/recipe/Recipes';
 // import recipes from './components/recipe/data';
 // import RecipeDetails from './components/recipe/RecipeDetails';
@@ -57,6 +61,10 @@ function App() {
                   })
                 }
               </Route>
+            <Route path="/ArticleRecomm" element={<ArticleRecomm />} />
+            <Route path="/MovieRecomm" element={<MovieRecomm />} />
+            <Route path="/BookRecomm" element={<BookRecomm />} />
+
         </Routes>
         <Footer />
         </GlobalLayout>
