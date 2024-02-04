@@ -13,29 +13,40 @@ Welcome to Ubuntu Unity, a project dedicated to promoting and celebrating the ri
 
 # Project Structure
 ## Components
-About: Explore the background and purpose of Ubuntu Unity.
+Sure, here are the items you provided formatted as bullet points:
 
-Login: Implemented Web Authentication using MongoDB for a secure and personalized experience.
+- **About:**
+  - Explore the background and purpose of Ubuntu Unity.
 
-Common: Integration of recommender functionality into the frontend to enhance user experience.
+- **Login:**
+  - Implemented Web Authentication using MongoDB for a secure and personalized experience.
 
-Contact: Connect with us through the landing page for any inquiries or collaboration.
+- **Common:**
+  - Integration of recommender functionality into the frontend to enhance user experience.
 
-funFacts: Enjoy entertaining facts and stories that celebrate the vibrant history.
+- **Contact:**
+  - Connect with us through the landing page for any inquiries or collaboration.
 
-Home: Updated Home.jsx and API.js for an enriched quiz experience.
+- **funFacts:**
+  - Enjoy entertaining facts and stories that celebrate the vibrant history.
 
-Pages: Continuously updated pages to provide fresh content.
+- **Home:**
+  - Updated Home.jsx and API.js for an enriched quiz experience.
 
-Recipe: Discover and share traditional recipes that are an integral part of Black culture.
+- **Pages:**
+  - Continuously updated pages to provide fresh content.
 
-Recommender: Explore recommended content tailored to your interests using ChatGPT API.
+- **Recipe:**
+  - Discover and share traditional recipes that are an integral part of Black culture.
 
-Righteous Reading: Engage with a landing page that highlights literature promoting Black history and pride.
+- **Recommender:**
+  - Explore recommended content tailored to your interests using ChatGPT API.
 
-Weekly Quiz: Participate in weekly quizzes to test your knowledge and learn more.
+- **Righteous Reading:**
+  - Engage with a landing page that highlights literature promoting Black history and pride.
 
-
+- **Weekly Quiz:**
+  - Participate in weekly quizzes to test your knowledge and learn more.
 ## Contributing
 We welcome contributions to Ubuntu Unity! If you have ideas, suggestions, or want to contribute code, please feel free to do so. Together, let's make Ubuntu Unity a platform that truly reflects and celebrates the diversity of the Black community.
 
