@@ -39,7 +39,7 @@ const Nav = () => {
             Recipes
           </Link>
           <Link to="/GetQuiz" className="whitespace-nowrap font-bold font-sans block mt-4 lg:inline-block lg:mt-0 text-[#262626] hover:text-[#E97451] mx-2">
-            Articles
+            Quiz
           </Link>
           
         </div>
