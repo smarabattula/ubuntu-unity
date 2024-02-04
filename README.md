@@ -14,15 +14,25 @@ Welcome to Ubuntu Unity, a project dedicated to promoting and celebrating the ri
 # Project Structure
 ## Components
 About: Explore the background and purpose of Ubuntu Unity.
+
 Login: Implemented Web Authentication using MongoDB for a secure and personalized experience.
+
 Common: Integration of recommender functionality into the frontend to enhance user experience.
+
 Contact: Connect with us through the landing page for any inquiries or collaboration.
+
 funFacts: Enjoy entertaining facts and stories that celebrate the vibrant history.
+
 Home: Updated Home.jsx and API.js for an enriched quiz experience.
+
 Pages: Continuously updated pages to provide fresh content.
+
 Recipe: Discover and share traditional recipes that are an integral part of Black culture.
-Recommender: Explore recommended content tailored to your interests.
+
+Recommender: Explore recommended content tailored to your interests using ChatGPT API.
+
 Righteous Reading: Engage with a landing page that highlights literature promoting Black history and pride.
+
 Weekly Quiz: Participate in weekly quizzes to test your knowledge and learn more.
 
 
