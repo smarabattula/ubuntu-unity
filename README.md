@@ -7,12 +7,12 @@
 ---
 # About
 
-#Ubuntu Unity - Celebrating Black History and Pride
-##Overview
+# Ubuntu Unity - Celebrating Black History and Pride
+## Overview
 Welcome to Ubuntu Unity, a project dedicated to promoting and celebrating the rich traditional values and way of life of the Black community. Our goal is to highlight the essence of Ubuntu and foster unity within the community.
 
-#Project Structure
-##Components
+# Project Structure
+## Components
 About: Explore the background and purpose of Ubuntu Unity.
 Login: Implemented Web Authentication using MongoDB for a secure and personalized experience.
 Common: Integration of recommender functionality into the frontend to enhance user experience.
@@ -26,10 +26,10 @@ Righteous Reading: Engage with a landing page that highlights literature promoti
 Weekly Quiz: Participate in weekly quizzes to test your knowledge and learn more.
 
 
-Contributing
+## Contributing
 We welcome contributions to Ubuntu Unity! If you have ideas, suggestions, or want to contribute code, please feel free to do so. Together, let's make Ubuntu Unity a platform that truly reflects and celebrates the diversity of the Black community.
 
-##How to Run
+## How to Run
 For Devs
 
 1. Clone the repository: git clone https://github.com/your-username/ubuntu-unity.git
