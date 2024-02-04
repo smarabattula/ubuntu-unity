@@ -13,12 +13,8 @@ Welcome to Ubuntu Unity, a project dedicated to promoting and celebrating the ri
 
 # Project Structure
 ## Components
-Sure, here are the items you provided formatted as bullet points:
 
-- **About:**
-  - Explore the background and purpose of Ubuntu Unity.
-
-- **Login:**
+- **Login & SignUp Auth:**
   - Implemented Web Authentication using MongoDB for a secure and personalized experience.
 
 - **Common:**
@@ -47,6 +43,9 @@ Sure, here are the items you provided formatted as bullet points:
 
 - **Weekly Quiz:**
   - Participate in weekly quizzes to test your knowledge and learn more.
+
+- **About:**
+  - Explore the background and purpose of Ubuntu Unity.
 ## Contributing
 We welcome contributions to Ubuntu Unity! If you have ideas, suggestions, or want to contribute code, please feel free to do so. Together, let's make Ubuntu Unity a platform that truly reflects and celebrates the diversity of the Black community.
 
