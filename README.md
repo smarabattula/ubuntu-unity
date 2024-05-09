@@ -52,7 +52,7 @@ We welcome contributions to Ubuntu Unity! If you have ideas, suggestions, or wan
 ## How to Run
 For Devs
 
-1. Clone the repository: git clone https://github.com/your-username/ubuntu-unity.git
+1. Clone the repository: git clone https://github.com/smarabattula/ubuntu-unity.git
 
 2. Navigate to the src directory: cd ubuntu-unity
 
